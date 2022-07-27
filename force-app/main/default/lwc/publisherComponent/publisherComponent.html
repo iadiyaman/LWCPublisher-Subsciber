@@ -1,3 +1,12 @@
 <template>
-    
+
+    <lightning-card  title="Hello">
+        <lightning-button onclick={pulishHandler} label="New" slot="actions"></lightning-button>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input onchange={textChangeHandler} type="text" label="First Name"></lightning-input>
+            <lightning-input onchange={nameChangeHandler} type="text" label="Last Name"></lightning-input>
+        </div>
+        <p slot="footer">publisher component</p>
+    </lightning-card>
+
 </template>
